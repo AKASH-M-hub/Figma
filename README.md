@@ -34,67 +34,437 @@ Figma
 
 ## CODE:
 ```
-LOGIN PAGE-01
-<div style="width: 488px; height: 929px; position: relative; background: #299496; overflow: hidden">
-  <img style="width: 380px; height: 93px; left: 54px; top: 16px; position: absolute" src="https://placehold.co/380x93" />
-  <div style="width: 3px; height: 1px; left: 420px; top: 234px; position: absolute; background: #BC1FB7"></div>
-  <div style="width: 309px; height: 74px; left: 86px; top: 598px; position: absolute; background: #A41DB0"></div>
-  <div style="width: 271px; height: 27px; left: 131.50px; top: 618px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">REGISTER</div>
-  <div style="width: 300px; height: 75px; left: 91px; top: 456px; position: absolute; background: #9831BD"></div>
-  <div style="left: 168px; top: 470px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">LOGIN</div>
-  <img style="width: 154px; height: 152px; left: 153px; top: 184px; position: absolute" src="https://placehold.co/154x152" />
+HOME  PAGE
+<style>
+  .sports-event-container {
+    background-color: rgba(21, 221, 239, 1);
+    display: flex;
+    max-width: 388px;
+    flex-direction: column;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    font: 400 20px Inter, sans-serif;
+  }
+  .event-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 0.733;
+    width: 100%;
+    align-items: center;
+    padding: 10px 10px 26px;
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .header-image {
+    aspect-ratio: 4.93;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    align-self: stretch;
+  }
+  .event-title {
+    position: relative;
+    margin-top: 47px;
+    font: 40px Jim Nightshade, sans-serif;
+  }
+  .register-button {
+    position: relative;
+    background-color: rgba(231, 41, 41, 1);
+    margin-top: 74px;
+    width: 176px;
+    max-width: 100%;
+    white-space: nowrap;
+    padding: 19px 50px;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+  }
+  .login-button {
+    position: relative;
+    background-color: rgba(237, 30, 30, 1);
+    margin-top: 22px;
+    width: 175px;
+    max-width: 100%;
+    color: rgba(23, 23, 23, 1);
+    white-space: nowrap;
+    padding: 18px 64px;
+    cursor: pointer;
+    border: none;
+  }
+  .event-tagline {
+    position: relative;
+    color: rgba(12, 231, 235, 1);
+    margin-top: 110px;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+</style>
+
+<div class="sports-event-container">
+  <div class="event-wrapper">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/51d5d8c34bd687ab3e1c9b740151c1292e3deebd98a93bfe6ef17fa19e4ffd74?placeholderIfAbsent=true&apiKey=1629b4e9ef2a424baba4b625fe28bf1c"
+      class="background-image"
+      alt="Sports Day Event background"
+    />
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc8b9a843de0f132c033ceebecbf047770d53864bfbd6504bb1e296845104ffb?placeholderIfAbsent=true&apiKey=1629b4e9ef2a424baba4b625fe28bf1c"
+      class="header-image"
+      alt="Sports Day Event header"
+    />
+    <h1 class="event-title">Sports Day Event</h1>
+    <button class="register-button" tabindex="0">Register</button>
+    <button class="login-button" tabindex="0">Login</button>
+    <p class="event-tagline">"Born to Win"</p>
+  </div>
 </div>
 
-LOGIN PAGE-03
-<div style="width: 477px; height: 932px; position: relative; background: #FA2D2D; overflow: hidden">
-  <img style="width: 380px; height: 93px; left: 54px; top: 16px; position: absolute" src="https://placehold.co/380x93" />
-  <img style="width: 380px; height: 93px; left: 54px; top: 16px; position: absolute" src="https://placehold.co/380x93" />
-  <img style="width: 380px; height: 93px; left: 54px; top: 16px; position: absolute" src="https://placehold.co/380x93" />
-  <div style="width: 296px; height: 46px; left: 70px; top: 813px; position: absolute; background: #331CDF"></div>
-  <div style="width: 296px; height: 46px; left: 70px; top: 570px; position: absolute; background: #331CDF"></div>
-  <div style="left: 126px; top: 570px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">TENNIS</div>
-  <div style="width: 296px; height: 46px; left: 68px; top: 713px; position: absolute; background: #B9B0F8"></div>
-  <div style="width: 296px; height: 46px; left: 68px; top: 327px; position: absolute; background: #331CDF"></div>
-  <div style="left: 105px; top: 327px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">FOOTBALL</div>
-  <div style="width: 296px; height: 46px; left: 68px; top: 456px; position: absolute; background: #EACA48"></div>
-  <div style="width: 286px; height: 54px; left: 77px; top: 218.50px; position: absolute; background: #F4E1E1"></div>
-  <div style="width: 251px; left: 99px; top: 214px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">CRICKET</div>
-  <div style="left: 126px; top: 454px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">HOCKEY</div>
-  <div style="left: 119px; top: 711px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">SCOCCER</div>
-  <div style="left: 155px; top: 811px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">GOLF</div>
-</div>
-<div style="width: 430px; height: 932px; position: relative; background: white; overflow: hidden">
-  <img style="width: 380px; height: 93px; left: 25px; top: 14px; position: absolute" src="https://placehold.co/380x93" />
-  <div style="width: 280px; height: 68px; left: 42px; top: 107px; position: absolute; background: #481AD4"></div>
-  <div style="left: 63px; top: 127px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">FULL  NAME </div>
-  <div style="width: 266px; height: 51px; left: 69px; top: 243px; position: absolute; background: #C11D1D"></div>
-  <div style="left: 101px; top: 246px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">GENDER</div>
-  <div style="width: 259px; height: 39px; left: 42px; top: 369px; position: absolute; background: #D9D9D9"></div>
-  <div style="left: 101px; top: 369px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">AGE</div>
-  <div style="width: 316px; height: 42px; left: 89px; top: 465px; position: absolute; background: #FA2D2D"></div>
-  <div style="left: 118px; top: 466px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">REGEISTER NO</div>
-  <div style="width: 261px; height: 38px; left: 40px; top: 582px; position: absolute; background: #9B2FC9"></div>
-  <div style="left: 89px; top: 571px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">DEPT</div>
-  <div style="width: 242px; height: 48px; left: 113px; top: 666px; position: absolute; background: #D9D9D9"></div>
-  <div style="left: 123px; top: 666px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">MOBILE NO</div>
-  <img style="width: 380px; height: 93px; left: 25px; top: 14px; position: absolute" src="https://placehold.co/380x93" />
-  <img style="width: 380px; height: 93px; left: 25px; top: 14px; position: absolute" src="https://placehold.co/380x93" />
-  <img style="width: 380px; height: 93px; left: 25px; top: 14px; position: absolute" src="https://placehold.co/380x93" />
-  <img style="width: 380px; height: 93px; left: 25px; top: 14px; position: absolute" src="https://placehold.co/380x93" />
-  <div style="width: 222px; height: 41px; left: 67px; top: 752px; position: absolute; background: #F2AFAF"></div>
-  <div style="left: 80px; top: 749px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">EMAIL  ID</div>
-  <div style="width: 328px; height: 49px; left: 102px; top: 857px; position: absolute; background: #481AD4; border-radius: 9999px"></div>
-  <div style="left: 164px; top: 858px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">REGISTER</div>
+EVENT LIST PAGE
+<style>
+  .sports-events-container {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    max-width: 384px;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Inknut Antiqua, sans-serif;
+    font-weight: 400;
+  }
+  .events-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 0.726;
+    width: 100%;
+    padding: 39px 63px 142px;
+  }
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .events-title {
+    position: relative;
+    color: rgba(244, 26, 26, 1);
+    font-size: 20px;
+    text-align: center;
+    align-self: center;
+  }
+  .events-list {
+    position: relative;
+    color: rgba(225, 12, 244, 1);
+    font-size: 16px;
+    width: 308px;
+    margin: 63px 0 -28px;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+</style>
+
+<div class="sports-events-container">
+  <div class="events-wrapper">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3b511e3416f88331ba3fd34c52fa8d8f1927403e4c96b7190ec312f311d0ed7?placeholderIfAbsent=true&apiKey=1629b4e9ef2a424baba4b625fe28bf1c"
+      class="background-image"
+      alt="Sports day events background"
+    />
+    <h1 class="events-title">Sports Day Events</h1>
+    <div class="events-list" role="list">
+      Cricket
+      <br />
+      Badminton
+      <br />
+      Volley Ball
+      <br />
+      100 MTS
+      <br />
+      200 MTS
+      <br />
+      400 MTS
+      <br />
+      4 x 100 Relay
+    </div>
+  </div>
 </div>
 
-LOGIN PAGE-04
-<div style="width: 430px; height: 932px; position: relative; background: #867CD5; overflow: hidden">
-  <img style="width: 380px; height: 93px; left: 25px; top: 14px; position: absolute" src="https://placehold.co/380x93" />
-  <img style="width: 388px; height: 160px; left: 25px; top: 651px; position: absolute" src="https://placehold.co/388x160" />
-  <div style="width: 297px; height: 77px; left: 56px; top: 259px; position: absolute; background: #787A69"></div>
-  <div style="left: 89px; top: 268px; position: absolute; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">THANK YOU</div>
-</div>
+REGISTRATION PAGE:
+<style>
+.registration-container {
+  background-color: #fff;
+  display: flex;
+  max-width: 391px;
+  flex-direction: column;
+  overflow: hidden;
+  color: #000;
+  font: 400 14px Inknut Antiqua, sans-serif;
+}
 
+.registration-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  aspect-ratio: 0.738;
+  width: 100%;
+  align-items: start;
+  padding: 24px 50px;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.form-title {
+  position: relative;
+  color: rgb(160, 30, 235);
+  font-size: 20px;
+}
+
+.input-field {
+  position: relative;
+  background-color: #fff;
+  width: 238px;
+  max-width: 100%;
+  padding: 12px;
+}
+
+.input-row {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.input-small {
+  background-color: #fff;
+  padding: 12px;
+}
+
+.submit-button {
+  position: relative;
+  background-color: rgb(229, 38, 38);
+  align-self: center;
+  margin-top: 15px;
+  width: 210px;
+  max-width: 100%;
+  color: rgb(23, 23, 23);
+  text-align: center;
+  padding: 18px;
+  font: 20px Inter, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+</style>
+
+<form class="registration-container">
+  <div class="registration-wrapper">
+    <img 
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/96ba9cb8247cb2f170afdd50368f6a0a559a48155b71e81aebadcd3213476a96?placeholderIfAbsent=true&apiKey=1629b4e9ef2a424baba4b625fe28bf1c" 
+      alt="" 
+      class="background-image"
+    />
+    <h1 class="form-title">Event Registration Form</h1>
+    
+    <label for="fullName" class="visually-hidden">Full name</label>
+    <input type="text" id="fullName" class="input-field" placeholder="Full name" required />
+    
+    <div class="input-row">
+      <div>
+        <label for="gender" class="visually-hidden">Gender</label>
+        <select id="gender" class="input-small" required>
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <div>
+        <label for="age" class="visually-hidden">Age</label>
+        <input type="number" id="age" class="input-small" placeholder="Age" required />
+      </div>
+    </div>
+    
+    <label for="regNumber" class="visually-hidden">Registration Number</label>
+    <input type="text" id="regNumber" class="input-field" placeholder="Registration Number" required />
+    
+    <label for="department" class="visually-hidden">Department</label>
+    <input type="text" id="department" class="input-field" placeholder="Department" required />
+    
+    <label for="contact" class="visually-hidden">Contact</label>
+    <input type="tel" id="contact" class="input-field" placeholder="Contact" required />
+    
+    <label for="email" class="visually-hidden">Email</label>
+    <input type="email" id="email" class="input-field" placeholder="Email" required />
+    
+    <label for="events" class="visually-hidden">Events to Register</label>
+    <select id="events" class="input-field" required>
+      <option value="">Select Events</option>
+      <option value="event1">Event 1</option>
+      <option value="event2">Event 2</option>
+      <option value="event3">Event 3</option>
+    </select>
+    
+    <button type="submit" class="submit-button">Register</button>
+  </div>
+</form>
+
+THANK YOU PAGE
+
+<style>
+.thank-you-section {
+  background-color: #fff;
+  display: flex;
+  max-width: 393px;
+  flex-direction: column;
+  overflow: hidden;
+  color: #000;
+  text-align: center;
+  font: 700 24px Inter, sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  aspect-ratio: 0.746;
+  width: 100%;
+  align-items: center;
+  padding: 17px 30px 84px;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header-image {
+  aspect-ratio: 4.83;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  align-self: stretch;
+}
+
+.title {
+  position: relative;
+  margin-top: 68px;
+}
+
+.message {
+  position: relative;
+  font-size: 16px;
+  margin-top: 42px;
+}
+
+.contact-info {
+  position: relative;
+  color: #2A24D7;
+  margin-top: 83px;
+}
+
+.email-text {
+  font-size: 16px;
+}
+
+.contact-detail {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+</style>
+
+<div class="thank-you-section">
+  <div class="content-wrapper">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/375bc7ac81024daa99e30087e446740568b59d020d91bbcb85038c403f242b85?placeholderIfAbsent=true&apiKey=1629b4e9ef2a424baba4b625fe28bf1c"
+      class="background-image"
+      alt=""
+    />
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/765a9013ac633aef9f50d7afa29b31ac8f4cfc731e44224dc10886abe576c919?placeholderIfAbsent=true&apiKey=1629b4e9ef2a424baba4b625fe28bf1c"
+      class="header-image"
+      alt="Sports event header decoration"
+    />
+    <h1 class="title">Thank You</h1>
+    <p class="message">
+      We are all eagerly waiting for your participation in the sports events
+    </p>
+    <div class="contact-info">
+      Contact Us
+      <span class="email-text">E-mail:</span>
+      <span class="contact-detail">
+        saveethaengineeringcollege@gmail.com
+      </span>
+      <span class="email-text">Phone:</span>
+      <span class="contact-detail">7485739332</span>
+      <span class="contact-detail">7283928365</span>
+    </div>
+  </div>
+</div>
 ```
 
 ## OUTPUT:
